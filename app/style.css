@@ -1,0 +1,346 @@
+body {
+  color: #FF0000;
+  background-color: rgb(55, 175, 175);
+  background-image: url("https://www.nascar.com/wp-content/uploads/sites/7/2024/11/05/GettyImages-2074246929.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.night {
+  background-image: url("https://www.courier-journal.com/gcdn/presto/2022/02/20/USAT/8b65d52a-fc9a-4824-b61e-39c96fab0866-early-daytona.jpg?crop=3804,2140,x873,y109&width=660&height=371&format=pjpg&auto=webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  font-size: 48px;
+  text-shadow: 5px 2px black;
+}
+
+h1 {
+  color: gold;
+  text-align: center;
+  text-shadow: -5px -2px black;
+  padding: 30px;
+  font-size: 50px;
+}
+
+.style {
+  color: black;
+  text-shadow: -3px -2px white;
+  font-size: 55px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 30px;
+  padding: 30px;
+}
+
+.center {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+.racing {
+  width: 500px;
+}
+
+.racing2 {
+  width: 550px;
+}
+
+button {
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background-color: #f4f4f4; /* Light background */
+  padding: 10px 20px; /* Add some padding */
+  cursor: pointer;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  border-radius: 8px; /* Rounded corners */
+  border-color: black;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  text-align: center; /* Align text properly inside the button */
+  width: 450px; /* Adjust width to make it responsive */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #cccccc;
+}
+
+/* Image inside buttons */
+button img {
+  max-width: 150px; /* Adjust size of the image */
+  height: auto;
+  margin-right: 10px; /* Space between image and text */
+  border-radius: 4px; /* Optional: rounded corners for the image */
+}
+
+/* Wrapper to align buttons properly */
+.wrapper {
+  margin-bottom: 15px; /* Space between each button section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side {
+  width: 100%;
+  margin-left: 5px;
+}
+
+/* Link button styling */
+button.word {
+  font-size: 20px;
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+button.word:hover {
+  background-color: #0056b3;
+}
+
+.color {
+  background-color: #f4f4f4;
+}
+
+.image {
+  height: 75px;
+  width: auto;
+  margin-left: -5px;
+}
+
+.SeparatePage {
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(red, white, blue);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  color: gold;
+}
+
+a:hover {
+  color: white;
+}
+
+#kyle-busch-table-container,
+#christopher-bell-table-container,
+#william-byron-table-container,
+#denny-hamlin-table-container,
+#ryan-blaney-table-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 15px;
+  max-height: 900px;
+}
+
+table {
+  width: 100%; /* Make the table take the full width of the container */
+  border-collapse: collapse; /* Remove extra spacing between table cells */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #dddddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+/* Add responsive styles */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  max-width: 100%; /* Ensure container doesn't exceed screen size */
+  margin: 10px 0; /* Add some spacing */
+}
+
+.container,
+.container2 {
+  max-width: 100%;
+  margin: 5vh;
+  flex: 1 1 100%;
+  box-shadow: 0px 0px 10px #000000;
+  border-radius: 1.5em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #80f0f1;
+}
+
+#winschart {
+  max-height: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  canvas {
+    width: 100%;
+    height: auto; /* Set a fixed height to ensure the chart remains visible */
+  }
+
+  table {
+    font-size: 12px; /* Reduce font size on smaller screens */
+  }
+
+  .chartCenter {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #kyle-busch-table-container,
+  #christopher-bell-table-container,
+  #william-byron-table-container,
+  #denny-hamlin-table-container,
+  #ryan-blaney-table-container {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+
+  h2 {
+    font-size: 1.25em; /* Reduce text size for smaller screens */
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 20px; /* Reduce font size on smaller screens */
+    width: 100%;
+    color: black;
+    align-content: center;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .racing {
+    width: 100%;
+  }
+  
+   .racing2 {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  button img {
+    max-width: 125px; /* Shrink image size on smaller screens */
+  }
+  
+  button.word {
+    display: flex;
+    align-content: center;
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  header {
+    font-size: 2.25em;
+  }
+
+  .center {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .chart-row {
+    flex-direction: column;
+  }
+  
+  .image {
+    display: flex;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  
+  .side {
+    width: 100%;
+    height: auto;
+  }
+  
+  .SeparatePage {
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .style {
+    font-size: 2.25em;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

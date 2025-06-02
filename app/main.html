@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Ewert&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jacky Lin INST630 Final Project</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/DataTables/datatables.css" />
+    <script>
+      const currentPage = "main";
+    </script>
+    <script src="/script.js" defer></script>
+    <script src="/DataTables/datatables.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Racing Stats Interface</h1>
+      <h3>Press any Driver to Look at Stats</h3>
+    </div>
+    <div>
+      <div class="wrapper">
+        <button id="kyle-busch-btn">
+          <img
+            src="https://cdn.glitch.global/6098f1c0-4ffc-4887-ab1f-9c3c8452dad5/8-Busch-Dega2-24-1200x520-1-922x400-removebg-preview.png?v=1733272838421"
+            alt="Kyle Busch's Lucas Oil car"
+            class="side"/>
+          <img
+            src="https://www.nascar.com/wp-content/uploads/sites/7/2024/01/22/kyle-busch-hero-24.png"
+            alt="Picture of Kyle Busch"
+            class="image"/>
+          Kyle Busch
+        </button>
+        <a href="https://motorsportstats.com/driver/kyle-busch/summary/series/nascar-cup-series" target="_blank"><button class="word">Click here for more stats</button></a>
+      </div>
+      <div id="kyle-busch-table-container" style="display: none"></div>
+
+      <div class="wrapper">
+        <button id="christopher-bell-btn">
+          <img
+            src="https://cdn.glitch.global/6098f1c0-4ffc-4887-ab1f-9c3c8452dad5/20-Bell-MVS2-24-1200x520-1-922x400-removebg-preview.png?v=1733273788047"
+            alt="Christopher Bell's Mobil 1 Car"
+            class="side"/>
+          <img
+            src="https://www.nascar.com/wp-content/uploads/sites/7/2024/01/23/christopher-bell-211x290.png"
+            alt="Picture of Christopher Bell"
+            class="image"/>
+          Christopher Bell
+        </button>
+        <a href="https://motorsportstats.com/driver/christopher-bell/summary/series/nascar-cup-series" target="_blank"><button class="word">Click here for more stats</button></a>
+      </div>
+      <div id="christopher-bell-table-container" style="display: none"></div>
+
+      <div class="wrapper">
+        <button id="william-byron-btn">
+          <img
+            src="https://cdn.glitch.global/6098f1c0-4ffc-4887-ab1f-9c3c8452dad5/24-Byron-PHX2-24-1200x520-1-922x400-removebg-preview.png?v=1733273660673"
+            alt="William Byron's Axalta car"
+            class="side"/>
+          <img
+            src="https://www.nascar.com/wp-content/uploads/sites/7/2024/01/23/william-byron-192x290.png"
+            alt="Picture of William Byron"
+            class="image"/>
+          William Byron
+        </button>
+        <a href="https://motorsportstats.com/driver/william-byron/summary/series/nascar-cup-series" target="_blank"><button class="word">Click here for more stats</button></a>
+      </div>
+      <div id="william-byron-table-container" style="display: none"></div>
+
+      <div class="wrapper">
+        <button id="denny-hamlin-btn">
+          <img
+            src="https://cdn.glitch.global/6098f1c0-4ffc-4887-ab1f-9c3c8452dad5/11-Hamlin-PHX2-24-1200x520-1-922x400-removebg-preview.png?v=1733273359271"
+            alt="Denny Hamlin's Fedex car"
+            class="side"/>
+          <img
+            src="https://www.nascar.com/wp-content/uploads/sites/7/2024/01/22/denny-hamlin-195x290.png"
+            alt="Picture of Denny Hamlin"
+            class="image"/>
+          Denny Hamlin
+        </button>
+        <a href="https://motorsportstats.com/driver/denny-hamlin/summary/series/nascar-cup-series" target="_blank"><button class="word">Click here for more stats</button></a>
+      </div>
+      <div id="denny-hamlin-table-container" style="display: none"></div>
+
+      <div class="wrapper">
+        <button id="ryan-blaney-btn">
+          <img
+            src="https://cdn.glitch.global/6098f1c0-4ffc-4887-ab1f-9c3c8452dad5/12-Blaney-Dega2-24-1200x520-1-922x400-removebg-preview.png?v=1733271681181"
+            alt="Ryan Blaney's Menards car"
+            class="side"/>
+          <img
+            src="https://www.nascar.com/wp-content/uploads/sites/7/2024/01/22/ryan-blaney-201x290.png"
+            alt="Picture of Ryan Blaney"
+            class="image"/>
+          Ryan Blaney
+        </button>
+        <a href="https://motorsportstats.com/driver/ryan-blaney/summary/series/nascar-cup-series" target="_blank"><button class="word">Click here for more stats</button></a>
+      </div>
+      <div id="ryan-blaney-table-container" style="display: none"></div>
+    </div>
+    <div class="center">
+      <a href="about.html">
+        <button class="color">About Me</button>
+      </a>
+      <a href="chart.html">
+        <button class="color">Charts</button>
+      </a>
+      <a href="index.html">
+        <button class="color">Return to Start</button>
+      </a>
+    </div>
+  </body>
+</html>
